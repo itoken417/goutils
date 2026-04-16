@@ -7,6 +7,11 @@
 - agoutiを使うため
 - headless chrome 入れて使う前提
 
+## chromedp
+
+- chromedpを使うため
+- headless chrome 入れて使う前提
+
 ## converter
 
 - go-moji
@@ -24,4 +29,3 @@
 - 基本上書き
 - write_callerを有効にすると、呼び出し元が判る。
     - いっぱいで過ぎて見づらい。
-
