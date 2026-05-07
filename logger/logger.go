@@ -1,6 +1,7 @@
 package logger
 
 import (
+	"github.com/itoken417/goutils/util/dumper"
 	"github.com/mitchellh/panicwrap"
 	"io"
 	"log"
@@ -87,6 +88,11 @@ func Dump(a ...interface{}) {
 			infolog.Printf(": %#v", str)
 		}
 	}
+}
+
+func LogD(a ...interface{}) {
+	print_caller()
+	infolog.Print(dumper.Dump(a...))
 }
 
 func ErrLog(a ...interface{}) {
